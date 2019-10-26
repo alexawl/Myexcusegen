@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+	<style>
+	</style>
+		<link rel="stylesheet" href="styles.css"/>
+				<link rel="stylesheet" href="excuse.js"/>
+
+			<script src="excuse.js" type="text/javascript"></script>
+				<title> Excuse Generator</title>
+				<meta description="My Excuse Generator"/>
+				</head>
+					<body>
+						<div class="well main">
+							<h1>Excuse Generator</h1>
+
+								<strong> Generate a quick excuse with this excuse generator to throw at your boss for being late.</strong>
+									<h3>Random Excuse</h3>
+										<textarea  rows=5 id="excuse" readonly="readonly"></textarea>
+
+												<h2>Press for New Excuse!</h2>
+							        <button class="button" id="generate" onclick="getExcuse()">Click Me</button>
+							  	<br/><br/>
+								<strong>Disclaimer:</strong><em>Excuse generator is  not meant to be useful in real world scenarios, so don't try to use these on your boss/girlfriend and expect to get away.</em>
+								<br/>
+						</div>
+
+					</body>
+		<script>
+				function getExcuse(){
+				let excuse=excuseGenerator();
+				document.getElementById("excuse").innerHTML=excuse;
+		}
+				getExcuse();
+		</script>
+
+
+</html>
